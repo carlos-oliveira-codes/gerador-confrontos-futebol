@@ -1,0 +1,52 @@
+<!--Jogo de Clubes
+Cadastre os clubes de futebol participantes de um campeonato.
+Crie um botão “Montar Confrontos” que sorteie duplas (1º x 2º, 3º x 4º, …).
+Se o número de clubes for ímpar, exiba uma mensagem de erro.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Clubes</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo_fut.png" alt="Logo Futebol" width="60px">
+        <h1>Jogo de Clubes</h1>
+    </header>
+
+    <main>
+        <section class="entrada">
+            <div class="apresentacao">
+                <img src="imagens/Sport-x-santaaa.jpeg" alt="Confronto Imagem" width="300px">
+                <h2>Montagem de confrontos</h2>
+            </div>
+            <div class="preenchimento">
+                <p><label for="inTime">Time: </label><input type="text" id="inTime"></p>
+                
+                <button id="btEnviar" type="submit">Enviar Time</button>
+                <button id="btGerar" type="submit">Gerar confrontos</button>
+            </div>
+        </section>
+
+        <div class="confrontos">
+                <div class="times">
+                    <h3 id="titulo-times"></h3>
+                    <pre id="outListaTimes"></pre>
+                </div>
+                <div class="tabela">
+                    <h3 id="titulo-confrontos"></h3>
+                    <pre id="outConfrontos"></pre>
+                </div>
+        </div>
+
+    </main>
+    <script src="scrpits/index.js"></script>
+</body>
+</html>
